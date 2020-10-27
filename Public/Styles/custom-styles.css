@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    font-family: century Gothic, CenturyGothic, sans-serif;
+}
+
+html,
+body{
+    height: auto;
+    background-color: #ffffff;
+}
+
+navbar h1{
+    text-align: center;
+}
+
+.btn-shop{
+    float: left;
+    margin: auto;
+    margin-left: 10%;
+    padding: 7px 45px 7px 45px;
+    font-weight: bold;
+    border: none;
+}
+
+.product-card-one,
+.product-card-two,
+.product-card-three{
+    width: 290px;
+    height: 320px;
+    box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.45);
+}
+
+.product-card-one{
+    background-color: #5DE1D9;
+}
+
+.product-card-two{
+    background-color: green;
+}
+
+.product-card-three{
+    background-color: blue;
+}
+
+.product-header-text{
+    background-color: #8B8686;
+    color: #3B3A6D;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.product-card-one > img,
+.product-card-two > img,
+.product-card-three > img{
+    height: 170px;
+    margin: auto;
+}
+
+.product-card-one > button,
+.product-card-two > button,
+.product-card-three > button{
+    font-size: 14px;
+}
+
+.product-card-one > button > span,
+.product-card-two > button > span,
+.product-card-three > button > span{
+    font-size: 12px;
+}
+
+.page-footer{
+    background-color: #5DE1D9;
+    height: auto;
+    padding-top: 15x;
+    padding-bottom: 15x;
+}
+
+.btn-contact-us{
+    background-color: #3B3A6D;
+    margin: auto;
+    padding: 10px 50px 10px 50px;
+    font-weight: bold;
+    border: none;
+}

@@ -8,7 +8,7 @@
 
     <!-- Links -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link rel="stylesheet" src='./Public/Styles/custom-styles.css'>
+      <link rel="stylesheet" href='./Public/Styles/custom-styles.css'>
     <!-- Links -->
 
     <!-- Scripts -->
@@ -32,7 +32,7 @@
 <body>
   <!-- Navbar -->
     <div style='background-color: #5DE1D9; position: sticky; top: 0;'>
-      <button class='btn btn-primary'>Shop</button> 
+      <button class='btn-shop btn btn-primary'>Shop</button> 
       <h1 style='text-align: center; color: #3B3A6D; font-weight: bold; font-size: 46px; margin-top: 0px; margin-bottom: 15px; padding-top: 15x;'>Fortisure<span style='color: #9F1224;'>Mart</span></h1>
       <img style='float: right; margin-top: 20px; margin-right: 100px; cursor: pointer;' src='./Public/Images/shopping-cart.png'>
     </div>
@@ -62,29 +62,29 @@
         <div>
 
           <!-- Product 1 -->
-            <div>
-              <p>Fortisure Shoes</p>
-              <img src=''>
+            <div class='product-card-one'>
+              <p class='product-header-text'>Fortisure <span style='color: #9F1224;'>Shoes</span></p>
+              <img src='./Public/Images/Products/shoes-white.jpg'>
               <p>The best shoes around</p>
-              <button>Add To Cart | $64.99</button>
+              <button class='btn btn-success'>Add To Cart | <span>$64.99</span></button>
             </div><br>
           <!-- Product 1 -->
 
           <!-- Product 2 -->
-            <div>
-              <p>Fortisure Shirts</p>
-              <img src=''>
+            <div class='product-card-two'>
+              <p class='product-header-text'>Fortisure <span style='color: #9F1224;'>Shirts</span></p>
+              <img src='./Public/Images/Products/t-shirt-black.jpg'>
               <p>A nice fitting shirt</p>
-              <button>Add To Cart | $14.99</button>
+              <button class='btn btn-success'>Add To Cart | <span>$14.99</span></button>
             </div><br>
           <!-- Product 2 -->
 
           <!-- Product 3 -->
-            <div>
-              <p>Fortisure Pants</p>
-              <img src=''>
+            <div class='product-card-three'>
+              <p class='product-header-text'>Fortisure <span style='color: #9F1224;'>Pants</span></p>
+              <img src='./Public/Images/Products/jeans-black.jpg'>
               <p>Water resistant pants for every occasion</p>
-              <button>Add To Cart | $19.99</button>
+              <button class='btn btn-success'>Add To Cart | <span>$19.99</span></button>
             </div><br>
           <!-- Product 3 -->
           
@@ -93,8 +93,19 @@
   <!-- Products -->
 
   <!-- Footer -->
-    <div>
-      <center><button>Contact Us</button></center>
+    <div class='page-footer'>
+     <form action="" style='margin-left: 40%; width: 350px;'>
+       <label>Full Name:</label><br>
+       <input type='text' class='form-control' placeholder="John Smith">
+
+       <label>Email:</label><br>
+       <input type='text' class='form-control' placeholder="bigchungus@gmail.com">
+
+       <label>How can we help?</label><br>
+       <textarea type='textarea' class='form-control' placeholder="i love 2 gauge shotguns"></textarea>
+
+       <input type='submit' class='btn-contact-us btn btn-primary' value="Contact Us">
+     </for>
     </div>
   <!-- Footer -->
     <p>welcome to the rice fields</p>
