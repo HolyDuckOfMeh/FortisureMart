@@ -1,12 +1,74 @@
 *{
-    box-sizing: border-box;
-    font-family: century Gothic, CenturyGothic, sans-serif;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.page-grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.navbar-grid{
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: #5DE1D9;
+    position: sticky;
+    top: 0;
+}
+
+.our-info-grid{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 38%;
+    grid-template-rows: auto;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+.info-text-left{
+    grid-column: 1;
+    padding: 25px 5% 25px 5%
+}
+
+.info-text-right{
+    grid-column: 2;
+    text-align: center;
+    border-left: 1px solid gray;
+    padding: 60px 5% 60px 5%;
+    height: 100%
+}
+
+.trending-container-grid{
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 38% 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    border-bottom: 1px solid gray;
+}
+
+.trending-container-grid > h2{
+    grid-column: 1;
+    margin: auto;
+    padding: 17%;
+    border-right: 1px solid gray;
+    font-weight: normal;
+    font-weight: 36px; 
+}
+
+.trending-container-grid > img{
+    height: 170px;
+    margin: auto;
 }
 
 html,
 body{
     height: auto;
     background-color: #ffffff;
+    margin: 0;
 }
 
 navbar h1{
@@ -14,6 +76,7 @@ navbar h1{
 }
 
 .btn-shop{
+    grid-column: 1;
     float: left;
     margin: auto;
     margin-left: 10%;
@@ -22,24 +85,31 @@ navbar h1{
     border: none;
 }
 
-.product-card-one,
-.product-card-two,
-.product-card-three{
+.product-card-one-grid,
+.product-card-two-grid,
+.product-card-three-grid{
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 164px auto 40px;
+    background-color: #5DE1D9;
+    margin-top: 25px;
+    margin-bottom: 25px;
     width: 290px;
     height: 320px;
     box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.45);
 }
 
-.product-card-one{
-    background-color: #5DE1D9;
+.product-card-one-grid{
+    grid-column: 2;
 }
 
-.product-card-two{
-    background-color: green;
+.product-card-two-grid{
+    grid-column: 3;
 }
 
-.product-card-three{
-    background-color: blue;
+.product-card-three-grid{
+    grid-column: 4;
 }
 
 .product-header-text{
@@ -51,36 +121,70 @@ navbar h1{
 
 }
 
-.product-card-one > img,
-.product-card-two > img,
-.product-card-three > img{
+.product-card-one-grid > img,
+.product-card-two-grid > img,
+.product-card-three-grid > img{
     height: 170px;
     margin: auto;
 }
 
-.product-card-one > button,
-.product-card-two > button,
-.product-card-three > button{
+.product-card-one-grid > button,
+.product-card-two-grid > button,
+.product-card-three-grid > button{
     font-size: 14px;
 }
 
-.product-card-one > button > span,
-.product-card-two > button > span,
-.product-card-three > button > span{
+.product-card-one-grid > button > span,
+.product-card-two-grid > button > span,
+.product-card-three-grid > button > span{
     font-size: 12px;
 }
 
-.page-footer{
+.page-footer-grid{
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     background-color: #5DE1D9;
     height: auto;
     padding-top: 15x;
     padding-bottom: 15x;
+    border-top: 1px solid gray
+}
+
+.footer-left,
+.footer-center,
+.footer-right{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.footer-center{
+    grid-column: 2
+}
+
+.footer-right{
+    grid-column: 3;
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 220px;
 }
 
 .btn-contact-us{
+    grid-column: 2;
     background-color: #3B3A6D;
     margin: auto;
     padding: 10px 50px 10px 50px;
     font-weight: bold;
     border: none;
+}
+
+.form-contact{
+    grid-column: 2;
+    width: 100%;
+}
+
+.form-contact > textarea,
+.form-row{
+    margin-bottom: 15px;
 }
