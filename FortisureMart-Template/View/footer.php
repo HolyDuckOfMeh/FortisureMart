@@ -4,20 +4,20 @@
             </div>
 
             <div class='footer-center'>
-                <form class='form-contact' action="">
+                <form class='form-contact' method='post' action=''>
                     <div class="form-row">
                         <div class="col">
                             <label>Full Name:</label>
-                            <input type="text" class="form-control" placeholder='John Smith'>
+                            <input type="text" class="form-control" placeholder='John Smith' name='cusName'>
                         </div>
                         <div class="col">   
                             <label>Email:</label>
-                            <input type="email" class="form-control" value="@example.com">
+                            <input type="email" class="form-control" placeholder="@example.com" name='cusEmail'>
                         </div>
                     </div>
 
                     <label>How can we help?</label><br>
-                    <textarea type="textarea" class="form-control"></textarea>
+                    <textarea type="textarea" class="form-control"  name='cusMessage'></textarea>
                     <input type='submit' class='btn-contact-us btn btn-primary' value='Contact Us'></input>
                 </form>
             </div>
