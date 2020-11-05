@@ -1,39 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <!-- Meta Tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Meta Tags -->
+<?php
 
-    <!-- Links -->
-        <link rel='stylesheet' href="./Public/CSS/custom-styles.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Links -->
+    include './View/header.php';
+    include './View/navbar.php';
 
-    <!-- Scripts -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Scripts -->
 
-    <title>FortisureMart</title>
-</head>
-
-<body>
-    <div class='page-grid'>
-        <!-- Navigation Bar - Inline styles -->
-            <div class='navbar-grid'>
-                <button class='btn-shop btn btn-primary'
-                        onclick="location.href='?'">
-                Shop</button>
-                        
-                <h1 class='fortisuremart-logo'>
-                    <span style='color: #3B3A6D;'>Fortisure</span><span style='color: #9F1224;'>Mart</span>
-                </h1>
-                    
-                <img class='shopping-cart-img' src='./Public/Images/shopping-cart.png'>
-            </div>
-        <!-- Navigation Bar -->
+?>
 
         <!-- Informational Section - Internal styles -->
             <div class='our-info-grid'>
@@ -75,7 +46,7 @@
                             <span>Fortisure</span>
                             <span>Shoes</span>
                         </p>
-                        <img src='./Public/Images/Products/shoes-white.jpg'>
+                        <img src='./View/Public/Images/Products/shoes-white.jpg'>
                         <p class='product-card-desc'>The best shoes around.</p>
                         <button class='btn-add-to-cart btn btn-success'>
                             Add To Cart | <span>$64.99</span>
@@ -89,7 +60,7 @@
                             <span>Fortisure</span>
                             <span>Shirt</span>
                         </p>
-                        <img src='./Public/Images/Products/t-shirt-black.jpg'>
+                        <img src='./View/Public/Images/Products/t-shirt-black.jpg'>
                         <p class='product-card-desc'>A nice fitting shirt</p>
                         <button class='btn-add-to-cart btn btn-success'>
                             Add To Cart | <span>$14.99</span>
@@ -103,7 +74,7 @@
                             <span>Fortisure</span>
                             <span>Jeans</span>
                         </p>
-                        <img src='./Public/Images/Products/jeans-black.jpg'>
+                        <img src='./View/Public/Images/Products/jeans-black.jpg'>
                         <p class='product-card-desc'>Water resistant pants for every occasion</p>
                         <button class='btn-add-to-cart btn btn-success'>
                             Add To Cart | <span>$19.99</span>
@@ -113,35 +84,9 @@
             </div>
         <!-- Trending Section -->
 
-    <!-- Footer -->
-        <div class='footer-grid'>
-            <div class='footer-left'>
-            </div>
 
-            <div class='footer-center'>
-                <form class='form-contact' action="">
-                    <div class="form-row">
-                        <div class="col">
-                            <label>Full Name:</label>
-                            <input type="text" class="form-control" placeholder='John Smith'>
-                        </div>
-                        <div class="col">   
-                            <label>Email:</label>
-                            <input type="email" class="form-control" value="@example.com">
-                        </div>
-                    </div>
+<?php
 
-                    <label>How can we help?</label><br>
-                    <textarea type="textarea" class="form-control"></textarea>
-                    <input type='submit' class='btn-contact-us btn btn-primary' value='Contact Us'></input>
-                </form>
-            </div>
+include './View/footer.php';
 
-            <div class='footer-right'>
-                Copyright 2020 | <a class='no-line-link' href='https://www.FortisureIT.com'>FortisureIT</a>
-            </div>
-        </div>
-    <!-- Footer -->
-    </div>
-</body>
-</html>
+?>
