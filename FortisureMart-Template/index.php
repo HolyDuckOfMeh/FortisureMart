@@ -40,47 +40,21 @@
         <!-- Trending Section - External Styles -->
             <div class='trending-container-grid'>
                 <h2>Trending Products</h2>
-                <!-- Card 1 -->
-                    <div class='product-card-grid'>
-                        <p class='product-header-text'>
-                            <span>Fortisure</span>
-                            <span>Shoes</span>
-                        </p>
-                        <img src='./View/Public/Images/Products/shoes-white.jpg'>
-                        <p class='product-card-desc'>The best shoes around.</p>
-                        <button class='btn-add-to-cart btn btn-success'>
-                            Add To Cart | <span>$64.99</span>
-                        </button>
-                    </div>
-                <!-- Card 1 -->
 
-                <!-- Card 2 -->
-                    <div class='product-card-grid'>
-                        <p class='product-header-text'>
-                            <span>Fortisure</span>
-                            <span>Shirt</span>
-                        </p>
-                        <img src='./View/Public/Images/Products/t-shirt-black.jpg'>
-                        <p class='product-card-desc'>A nice fitting shirt</p>
-                        <button class='btn-add-to-cart btn btn-success'>
-                            Add To Cart | <span>$14.99</span>
-                        </button>
-                    </div>
-                <!-- Card 2 -->
-                
-                <!-- Card 3 -->
-                    <div class='product-card-grid'>
-                        <p class='product-header-text'>
-                            <span>Fortisure</span>
-                            <span>Jeans</span>
-                        </p>
-                        <img src='./View/Public/Images/Products/jeans-black.jpg'>
-                        <p class='product-card-desc'>Water resistant pants for every occasion</p>
-                        <button class='btn-add-to-cart btn btn-success'>
-                            Add To Cart | <span>$19.99</span>
-                        </button>
-                    </div>
-                <!-- Card 3 -->
+                <?php
+
+                    //creating array for the coupon loop
+                    $productInfo = array(
+
+                        array("Shoes", "shoes-white", "The best shoes around.", 64.99),
+                        array("Shirt", "t-shirt-black", "A nice fitting shirt.", 14.99),
+                        array("Jeans", "jeans-black", "Water resistant pants for every occasion.", 19.99),
+
+                    );
+
+                    include './Controller/product-cards.php'
+
+                ?>
             </div>
         <!-- Trending Section -->
 
