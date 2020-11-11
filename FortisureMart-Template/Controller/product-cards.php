@@ -4,7 +4,7 @@
     $colNum = 2;
 
     //loop to print each coupon in array
-    for($index = 0; $index < count($productInfo); $index++){
+        function makeProductCard($prodName, $prodImg, $prodType, $prodDesc, $prodPrice, $colNum){
         echo "
             <div class='product-card-grid'
             style='grid-column: {$colNum};
@@ -12,17 +12,15 @@
 
                 <p class='product-header-text'>
                     <span>Fortisure</span>
-                    <span>{$productInfo[$index][0]}</span>
+                    <span>{$prodType}</span>
                 </p>
-                <img src='./View/Public/Images/Products/{$productInfo[$index][1]}.jpg'>
-                <p class='product-card-desc'>{$productInfo[$index][2]}</p>
+                <img src='./View/Public/Images/Products/{$prodImg}.png'>
+                <p class='product-card-desc'>{$prodName}.<br>{$prodDesc}</p>
                 <button class='btn-add-to-cart btn btn-success'>
-                    Add To Cart | <span>\${$productInfo[$index][3]}</span>
+                    Add To Cart | <span>\${$prodPrice}</span>
                 </button>
             </div>
         ";
-        //increment column num
-        $colNum++;
     }
 
 ?>

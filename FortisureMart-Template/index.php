@@ -1,8 +1,16 @@
 <?php
-
     include './View/header.php';
+    include './Controller/db_conn.php';
+    include './Controller/product-cards.php';
+    include './Model/query-products.php';
     include './View/navbar.php';
 
+    $database = new Database();
+    $db = $database->connect();
+
+    $product = new Product($db);
+
+    $productGet = $product->prodRead();
 
 ?>
 
@@ -42,17 +50,21 @@
                 <h2>Trending Products</h2>
 
                 <?php
+                    $colNum = 2;
 
-                    //creating array for the coupon loop
-                    $productInfo = array(
+                    while($row = $productGet->fetch(PDO::FETCH_ASSOC)){
+                        // Variables
+                            $prodName = $row['productName'];
+                            $prodImg = $row['productImage'];
+                            $prodType = $row['productType'];
+                            $prodDesc = $row['productDescription'];
+                            $prodPrice = bcdiv($row['buyPrice'], 1, 2);
 
-                        array("Shoes", "shoes-white", "The best shoes around.", 64.99),
-                        array("Shirt", "t-shirt-black", "A nice fitting shirt.", 14.99),
-                        array("Jeans", "jeans-black", "Water resistant pants for every occasion.", 19.99),
+                        // Variables
 
-                    );
-
-                    include './Controller/product-cards.php'
+                        makeProductCard($prodName, $prodImg, $prodType, $prodDesc, $prodPrice, $colNum);
+                        $colNum++;
+                    }
 
                 ?>
             </div>
