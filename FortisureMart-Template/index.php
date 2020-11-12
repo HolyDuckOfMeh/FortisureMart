@@ -2,6 +2,7 @@
     include './View/header.php';
     include './Controller/db_conn.php';
     include './Controller/product-cards.php';
+    include './Controller/update-cart.php';
     include './Model/query-products.php';
     include './View/navbar.php';
 
@@ -54,6 +55,7 @@
 
                     while($row = $productGet->fetch(PDO::FETCH_ASSOC)){
                         // Variables
+                            $prodCode = $row['productCode'];
                             $prodName = $row['productName'];
                             $prodImg = $row['productImage'];
                             $prodType = $row['productType'];
@@ -62,7 +64,7 @@
 
                         // Variables
 
-                        makeProductCard($prodName, $prodImg, $prodType, $prodDesc, $prodPrice, $colNum);
+                        makeProductCard($prodCode, $prodName, $prodImg, $prodType, $prodDesc, $prodPrice, $colNum);
                         $colNum++;
                     }
 

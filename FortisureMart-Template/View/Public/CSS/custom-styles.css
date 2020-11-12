@@ -50,6 +50,16 @@ body {
   font-size: 46px;
 }
 
+.cart-container {
+  margin-top: 15px;
+}
+
+.items-in-cart {
+  font-weight: bold;
+  float: right;
+  margin-right: 14%;
+}
+
 .shopping-cart-img {
   -ms-grid-column: 3;
   grid-column: 3;
@@ -57,6 +67,11 @@ body {
   margin: auto;
   margin-right: 15%;
   cursor: pointer;
+}
+
+.modal-header,
+.modal-footer {
+  background-color: #5DE1D9;
 }
 
 .our-info-grid {
