@@ -9,6 +9,8 @@
             
 
             <div class='cart-container'>
+            <img class='shopping-cart-img' src='./View/Public/Images/shopping-cart.png' data-toggle='modal' data-target='#modal-users-cart'>
+
                 <?php
                     //total variable
                     $itemCount = 0;
@@ -22,7 +24,6 @@
                     echo "<sub class='items-in-cart'>{$itemCount}</sub>";
                 ?>
             </div>
-            <img class='shopping-cart-img' src='./View/Public/Images/shopping-cart.png' data-toggle='modal' data-target='#modal-users-cart'>
         </div>
         <!-- Navigation Bar -->
 
@@ -55,6 +56,17 @@
                                 <div class='modal-footer'>
                                     <!-- Second close button -->
                                     <button type="button" class="btn btn-default" data-dismiss='modal'>Close</button>
+                                    <!-- Form -->
+                                        <form action="" method="post">
+                                            <label for="nameinput">First Name</label>
+                                            <input id="nameInput" name="cartCustomerName" style="width: 150px">
+
+                                            <label for="idinput">ID</label>
+                                            <input id="idInput" name="customerId" style="width: 45px; margin-right: 50px">
+
+                                            <button type="submit" class="btn btn-primary">Purchase</button>
+                                        </form>
+                                    <!-- Form -->
                                 </div>
                             <!-- Modal Footer -->
                         </div>
