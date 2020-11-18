@@ -9,7 +9,6 @@
             
 
             <div class='cart-container'>
-            <img class='shopping-cart-img' src='./View/Public/Images/shopping-cart.png' data-toggle='modal' data-target='#modal-users-cart'>
 
                 <?php
                     //total variable
@@ -21,8 +20,10 @@
                     }
 
                     //display how many items are in the cart
-                    echo "<sub class='items-in-cart'>{$itemCount}</sub>";
-                ?>
+                    echo "<sub class='items-in-cart' id='items-in-cart'>{$itemCount}</sub>";
+                ?> 
+                 <img class='shopping-cart-img' src='./View/Public/Images/shopping-cart.png' data-toggle='modal' data-target='#modal-users-cart'>
+
             </div>
         </div>
         <!-- Navigation Bar -->
@@ -45,7 +46,7 @@
                             <!-- Modal Header -->
 
                             <!-- Modal Body -->
-                                <div class='modal-body'>
+                                <div class='modal-body' id='modal-body'>
                                     <?php
                                         include './Controller/modal-display.php';
                                     ?>

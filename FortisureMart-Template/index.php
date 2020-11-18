@@ -3,6 +3,7 @@
     include './Controller/db_conn.php';
     include './Controller/product-cards.php';
     include './Controller/update-cart.php';
+    include './Controller/ajax-calls.php';
     include './Model/query-products.php';
 
     $database = new Database();

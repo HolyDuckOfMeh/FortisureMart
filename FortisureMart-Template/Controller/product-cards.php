@@ -17,15 +17,10 @@
                 <img src='./View/Public/Images/Products/{$prodImg}.png'>
                 <p class='product-card-desc'>{$prodName}.<br>{$prodDesc}</p>
 
-                <form method='post' action=''>
-                    <input name='code' value='{$prodCode}' hidden>
-                    <input name='name' value='{$prodName}' hidden>
-                    <input name='img' value='{$prodImg}' hidden>
-                    <input name='price' value='{$prodPrice}' hidden>
-                    <button type='submit' class='btn-add-to-cart btn btn-success'>
+
+                    <button type='submit' class='btn-add-to-cart btn btn-success' onclick=\"ajaxCard('$prodCode', '$prodName', '$prodImg', '$prodPrice')\">
                         Add To Cart | <span>\${$prodPrice}</span>
                     </button>
-                </form>
 
             </div>
         ";
