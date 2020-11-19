@@ -198,3 +198,104 @@ ul > li{
 .form-row{
   margin-bottom: 15px;
 }
+
+.btn-mid-shop{
+  display: none;
+  transition: 350ms;
+  border-radius: 3px;
+  font-weight: 500;
+  background-color: #3B3A6D;
+  margin: 20px;
+  padding: 7px 45px 7px 45px;
+  font-weight: bold;
+  border: none;
+  height: 50px;
+  width: 50%;
+}
+
+.header-title[data-large]::after{
+  content: attr(data-large);
+}
+
+@media only screen and (max-width: 1500px){
+  .trending-container-grid{
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    justify-items: center;
+  }
+  .trending-container-grid h2{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  $mediaOne: 0.8;
+
+  .product-card-grid{
+    grid-template-rows: 50px * $mediaOne 164px * $mediaOne auto 40px;
+    margin-top: 25px * $mediaOne;
+    margin-bottom: 25px * $mediaOne;
+    width: 290px * $mediaOne;
+    height: 329px * $mediaOne;
+    font-size: 14px * $mediaOne;
+  }
+  .product-header-text{
+    font-size: 20px * $mediaOne;
+  }
+  .btn-add-to-cart{
+    font-size: 14px * $mediaOne;
+  }
+  .trending-container-grid h2{
+    font-size: 36px * $mediaOne;
+  }
+  .trending-container-grid img{
+    height: 170px * $mediaOne;
+  }
+}
+
+@media only screen and (max-width: 830px){
+  .product-card-grid{
+    display: none;
+  }
+  .btn-mid-shop{
+    display: block;
+  }
+  .trending-container-grid{
+    grid-template-columns: 1fr;
+    border: none;
+  }
+  .page-grid{
+    grid-template-rows: auto auto auto 0px auto;
+  }
+  .footer-grid{
+    grid-template-columns: 15% 1fr 15%;
+  }
+  .footer-left{
+    padding: 10px;
+    grid-column: 2;
+  }
+  .footer-right{
+    padding: 10px;
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .header-title[data-large]::after{
+    content: attr(data-small)
+  }
+  .our-info-grid{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  .info-text-left{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .info-text-right{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+
+}

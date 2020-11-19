@@ -265,4 +265,116 @@ ul > li {
 .form-row {
   margin-bottom: 15px;
 }
+
+.btn-mid-shop {
+  display: none;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+  border-radius: 3px;
+  font-weight: 500;
+  background-color: #3B3A6D;
+  margin: 20px;
+  padding: 7px 45px 7px 45px;
+  font-weight: bold;
+  border: none;
+  height: 50px;
+  width: 50%;
+}
+
+.header-title[data-large]::after {
+  content: attr(data-large);
+}
+
+@media only screen and (max-width: 1500px) {
+  .trending-container-grid {
+    -ms-grid-columns: 5% 1fr 1fr 1fr 5%;
+        grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    justify-items: center;
+  }
+  .trending-container-grid h2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .product-card-grid {
+    -ms-grid-rows: 40px 131.2px auto 40px;
+        grid-template-rows: 40px 131.2px auto 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 232px;
+    height: 263.2px;
+    font-size: 11.2px;
+  }
+  .product-header-text {
+    font-size: 16px;
+  }
+  .btn-add-to-cart {
+    font-size: 11.2px;
+  }
+  .trending-container-grid h2 {
+    font-size: 28.8px;
+  }
+  .trending-container-grid img {
+    height: 136px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .product-card-grid {
+    display: none;
+  }
+  .btn-mid-shop {
+    display: block;
+  }
+  .trending-container-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    border: none;
+  }
+  .page-grid {
+    -ms-grid-rows: auto auto auto 0px auto;
+        grid-template-rows: auto auto auto 0px auto;
+  }
+  .footer-grid {
+    -ms-grid-columns: 15% 1fr 15%;
+        grid-template-columns: 15% 1fr 15%;
+  }
+  .footer-left {
+    padding: 10px;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .footer-right {
+    padding: 10px;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-title[data-large]::after {
+    content: attr(data-small);
+  }
+  .our-info-grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
+  .info-text-left {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .info-text-right {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
 /*# sourceMappingURL=custom-styles.css.map */

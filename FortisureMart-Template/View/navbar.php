@@ -4,7 +4,9 @@
             Shop</button>
                     
             <h1 class='fortisuremart-logo'>
-                <span style='color: #3B3A6D;'>Fortisure</span><span style='color: #9F1224;'>Mart</span>
+
+                <span style='color: #3B3A6D;' class='header-title' data-large="Fortisure" data-small="F"></span><span style='color: #9F1224;' class='header-title' data-large="Mart" data-small="M"></span>
+
             </h1>
             
 
